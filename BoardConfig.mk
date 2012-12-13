@@ -25,6 +25,10 @@ ARCH_ARM_HAVE_TLS_REGISTER := true
 
 TARGET_NO_BOOTLOADER := true
 
+#Kernel Built Here
+TARGET_KERNEL_SOURCE := kernel/lge/mako
+TARGET_PREBUILT_KERNEL := device/lge/mako/kernel
+
 BOARD_KERNEL_BASE := 0x80200000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=mako lpj=67677
