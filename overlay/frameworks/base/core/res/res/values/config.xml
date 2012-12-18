@@ -23,7 +23,7 @@
     <bool name="config_animateScreenLights">false</bool>
 
     <!-- Default color for notification LED is white. -->
-    <color name="config_defaultNotificationColor">#ffffffff</color>
+    <color name="config_defaultNotificationColor">#ff6eede9</color>
 
     <!-- Default LED on time for notification LED in milliseconds. -->
     <integer name="config_defaultNotificationLedOn">1000</integer>
