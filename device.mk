@@ -45,7 +45,13 @@ PRODUCT_PACKAGES += \
 LOCAL_KERNEL := device/lge/mako/kernel
 
 PRODUCT_COPY_FILES := \
-	$(LOCAL_KERNEL):kernel
+        $(LOCAL_KERNEL):kernel
+
+# Files needed for kernel
+PRODUCT_COPY_FILES += \
+        device/lge/mako/prebuilt/power.msm8960.so:system/lib/hw/power.msm8960.so \
+        device/lge/mako/prebuilt/cpufreq_limit.ko:system/lib/modules/cpufreq_limit.ko \
+        device/lge/mako/prebuilt/thermald:system/bin/thermald
 
 PRODUCT_COPY_FILES += \
 	device/lge/mako/WCNSS_cfg.dat:system/vendor/firmware/wlan/prima/WCNSS_cfg.dat \
@@ -109,12 +115,12 @@ PRODUCT_COPY_FILES += \
 
 # NFC packages
 PRODUCT_PACKAGES += \
-    libnfc-nci \
-    libnfc_nci_jni \
-    nfc_nci.mako \
-    NfcNci \
-    Tag \
-    com.android.nfc_extras
+     libnfc-nci \
+     libnfc_nci_jni \
+     nfc_nci.mako \
+     NfcNci \
+     Tag \
+     com.android.nfc_extras
 
 # NFCEE access control
 ifeq ($(TARGET_BUILD_VARIANT),user)
