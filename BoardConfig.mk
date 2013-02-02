@@ -96,6 +96,8 @@ TARGET_NO_RPC := true
 
 TARGET_RELEASETOOLS_EXTENSIONS := device/lge/mako
 
+BOARD_CHARGER_ENABLE_SUSPEND := true
+
 -include vendor/lge/mako/BoardConfigVendor.mk
 
 BOARD_HAS_NO_SELECT_BUTTON := true
