@@ -47,12 +47,6 @@ LOCAL_KERNEL := device/lge/mako/kernel
 PRODUCT_COPY_FILES := \
         $(LOCAL_KERNEL):kernel
 
-# Files needed for kernel
-PRODUCT_COPY_FILES += \
-        device/lge/mako/prebuilt/power.msm8960.so:system/lib/hw/power.msm8960.so \
-        device/lge/mako/prebuilt/cpufreq_limit.ko:system/lib/modules/cpufreq_limit.ko \
-        device/lge/mako/prebuilt/thermald:system/bin/thermald
-
 PRODUCT_COPY_FILES += \
 	device/lge/mako/WCNSS_cfg.dat:system/vendor/firmware/wlan/prima/WCNSS_cfg.dat \
 	device/lge/mako/WCNSS_qcom_cfg.ini:system/etc/wifi/WCNSS_qcom_cfg.ini \
