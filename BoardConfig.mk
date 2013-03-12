@@ -40,6 +40,7 @@ TARGET_USE_PREBUILT_KERNEL := true
 
 #TARGET_KERNEL_SOURCE := kernel/lge/mako
 #TARGET_KERNEL_CONFIG := mako_defconfig
+#TARGET_PREBUILT_KERNEL := device/lge/mako-kernel/kernel
 
 BOARD_USES_ALSA_AUDIO:= true
 BOARD_USES_FLUENCE_INCALL := true
