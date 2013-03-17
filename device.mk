@@ -261,3 +261,10 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
 # This is the mako-specific audio package
 $(call inherit-product, frameworks/base/data/sounds/AudioPackage10.mk)
+
+# Goo.im stuff
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.goo.developerid=BaNkS \
+    ro.goo.rom=Xylon \
+    ro.goo.version=$(shell date +%Y%m%d-%H%M%S) \
+    ro.goo.board=mako
