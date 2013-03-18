@@ -102,10 +102,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	device/lge/mako/gps.conf:system/etc/gps.conf
 
-# Trickster Mod
-PRODUCT_PACKAGES += \
-    TM
-
 # NFC packages
 PRODUCT_PACKAGES += \
      libnfc-nci \
