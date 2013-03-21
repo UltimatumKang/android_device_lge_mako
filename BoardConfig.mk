@@ -14,6 +14,7 @@
 # limitations under the License.
 #
 
+TARGET_EXTRA_CFLAGS := -mtune=cortex-a9 -mcpu=cortex-a9
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_SMP := true
@@ -40,7 +41,6 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01600000
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/lge/mako
 TARGET_KERNEL_CONFIG := mako_defconfig
-TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.6
 
 BOARD_USES_ALSA_AUDIO:= true
 BOARD_USES_FLUENCE_INCALL := true
