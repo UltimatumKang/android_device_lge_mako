@@ -41,7 +41,7 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01600000
 
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/lge/mako
-TARGET_KERNEL_CONFIG := sabermod_mako_defconfig
+TARGET_KERNEL_CONFIG := mako_defconfig
 
 BOARD_USES_ALSA_AUDIO:= true
 BOARD_USES_FLUENCE_INCALL := true
