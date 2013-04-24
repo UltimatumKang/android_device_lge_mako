@@ -35,11 +35,6 @@ PRODUCT_PACKAGES += \
     charger_res_images \
     charger
 
-LOCAL_KERNEL := device/lge/mako/kernel
-
-PRODUCT_COPY_FILES := \
-	$(LOCAL_KERNEL):kernel
-
 # Live Wallpapers
 PRODUCT_PACKAGES += \
         LiveWallpapers \
