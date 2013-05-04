@@ -23,7 +23,6 @@ TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
 ARCH_ARM_HAVE_TLS_REGISTER := true
 
-
 # Krait optimizations
 TARGET_USE_KRAIT_BIONIC_OPTIMIZATION := true
 TARGET_USE_KRAIT_PLD_SET := true
@@ -42,7 +41,7 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01600000
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/lge/mako
 TARGET_KERNEL_CONFIG := mako_defconfig
-TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.7
+TARGET_KERNEL_CUSTOM_LINARO_TOOLCHAIN := linaro/bin/arm-linux-gnueabihf-
 
 BOARD_USES_ALSA_AUDIO:= true
 BOARD_USES_FLUENCE_INCALL := true
@@ -112,3 +111,5 @@ BOARD_CHARGER_ENABLE_SUSPEND := true
 -include vendor/lge/mako/BoardConfigVendor.mk
 
 BOARD_HAS_NO_SELECT_BUTTON := true
+
+TARGET_GCC_VERSION := 4.9
