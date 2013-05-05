@@ -14,6 +14,7 @@
 # limitations under the License.
 #
 
+TARGET_GCC_VERSION := 4.9
 TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
 TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
 TARGET_CPU_ABI := armeabi-v7a
@@ -111,5 +112,3 @@ BOARD_CHARGER_ENABLE_SUSPEND := true
 -include vendor/lge/mako/BoardConfigVendor.mk
 
 BOARD_HAS_NO_SELECT_BUTTON := true
-
-TARGET_GCC_VERSION := 4.9
