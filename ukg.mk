@@ -46,3 +46,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_VERSION_TAGS=release-keys \
     PRIVATE_BUILD_DESC="occam-user 4.2.2 JDQ39 573038 release-keys" \
     BUILD_FINGERPRINT="google/occam/mako:4.2.2/JDQ39/573038:user/release-keys"
+
+# hybrid
+PRODUCT_COPY_FILES +=  \
+    vendor/ukg/prebuilt/hybrid_xhdpi.conf:system/etc/beerbong/properties.conf \
