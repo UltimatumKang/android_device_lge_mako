@@ -119,7 +119,7 @@ BOARD_SEPOLICY_DIRS += \
 BOARD_SEPOLICY_UNION += \
 	file_contexts \
 	te_macros \
-	bd_addr_loader.te \
+	bluetooth_loader.te \
 	bluetooth.te \
 	bridge.te \
 	camera.te \
@@ -130,7 +130,6 @@ BOARD_SEPOLICY_UNION += \
 	file.te \
 	kickstart.te \
 	init.te \
-	init_trusted_shell.te \
 	mediaserver.te \
 	mpdecision.te \
 	netmgrd.te \
@@ -140,6 +139,7 @@ BOARD_SEPOLICY_UNION += \
 	sensors.te \
 	surfaceflinger.te \
 	system.te \
+	tee.te \
 	thermald.te \
 	ueventd.te \
 	wpa_supplicant.te
