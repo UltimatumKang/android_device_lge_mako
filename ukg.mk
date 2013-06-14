@@ -32,7 +32,7 @@ $(call inherit-product, vendor/ukg/config/common_phone.mk)
 
 # products
 PRODUCT_DEVICE := mako
-PRODUCT_BRAND := Google
+PRODUCT_BRAND := google
 PRODUCT_NAME := ukg_mako
 PRODUCT_MODEL := Nexus 4
 PRODUCT_MANUFACTURER := LGE
