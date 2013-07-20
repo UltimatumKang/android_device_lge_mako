@@ -118,30 +118,27 @@ BOARD_SEPOLICY_DIRS += \
 
 BOARD_SEPOLICY_UNION += \
 	file_contexts \
-	property_contexts \
-	te_macros \
-	bluetooth_loader.te \
+	bd_addr_loader.te \
+	bluetooth.te \
 	bridge.te \
 	camera.te \
 	conn_init.te \
 	device.te \
 	dhcp.te \
 	domain.te \
-	drmserver.te \
 	file.te \
 	kickstart.te \
 	init.te \
+	init_shell.te \
 	mediaserver.te \
 	mpdecision.te \
 	netmgrd.te \
-	property.te \
 	qmux.te \
 	rild.te \
 	rmt.te \
 	sensors.te \
 	surfaceflinger.te \
 	system.te \
-	tee.te \
 	thermald.te \
 	ueventd.te \
 	wpa_supplicant.te
